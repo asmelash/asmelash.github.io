@@ -1,13 +1,12 @@
-
+<!DOCTYPE html>
  
 <html lang="en">
 
-    <head>
+<head>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>    
     
         <style>
             body{
@@ -44,13 +43,10 @@
           gtag('js', new Date());
     
           gtag('config', 'UA-110954752-1');
-        </script>  
-        
-    </head>
+        </script>         
+</head>    
     
-    
-    <body>    
-
+<body>    
     <div class="container pt-5 pb-3">
         <div class="row">
             <div class="col-lg-8">
@@ -95,38 +91,41 @@
         </div>
     </div>      
 
-<!--Home-->    
-<div class="container">
+	<!--Home-->    
+	<div class="container">
     <div class="row">
     
         <div class="col-md-8">
 
             <div class="row shadow bg-light mx-1 px-4 pt-5 pb-4" >
-                <div class="px-4 pt-5 mb-5" style="background: yellowgreen; color: blue;">
+                <div class="px-4 pt-5 mb-5" style="background: none; color: none;">
                     <h2>Home <a href="pdf/MyResume.pdf"></a> </h2>
                     <p>               
                         <p> <strong>Name</strong> - Asmelash Haftu Amaha</p>                 
-                        <p> <strong>Homepage</strong> - https://github.com/asmelash/asmelash.github.io</p>                 
-                        <p> <strong>GitHub</strong> - https://github.com/asmelash/asmelash.github.io</p> 
+                        <p> <strong>Homepage</strong> - https://asmelash.github.io</p>                 
+                        <p> <strong>GitHub</strong> - https://github.com/asmelash</p>                         
                     </p>
-                    <p><A href="pdf/MyResume.pdf"><button type="button" class="btn btn-light btn-outline-dark">View My Resume</button></A></p>               
-                </div>
+
+                    <p><A href="pdf/MyResume.pdf"><button type="button" class="btn btn-light btn-outline-dark">View My Resume</button></A></p>   
+                                		
+            		<video width="625" height="420" controls>
+            		<source src="video/adiX.mp4" type="video/mp4">                         
+                </div>              
             </div>
             
         </div>
        
- <!--subset-->    
- <div class="col-lg-4 pt-5">
+	<!--subset-->    
+ 	<div class="col-lg-4 pt-5">
     <div class="row py-5 px-4 bg-light mb-5 shadow mx-1">
         <div class="col text-center">
             <!--img class="pb-5" src="image/fig1.jpg" width="100%" style="max-width: 200px"-->
-            <img class="pb-5" src="fig1.jpg" width="100%" style="max-width: 200px">
+            <img class="pb-5" src="images/fig1.JPG" width="100%" style="max-width: 200px">
             <p>
-                I am a student at IIT Bombay studying PhD in Aerospace Engineering. <br>
-                 <br>
-                I am working in the area of turbine modeling using OpenFOM and PySPH.<br>
+                I am a research scholar at IIT Bombay studying for PhD in Aerospace Engineering.<br><br>
+                I work in the area of turbine modeling using OpenFOM and PySPH tools.<br>
             </p>
-            <A href="pdf/MyResume.pdf">MyResume</A>
+            <A href="pdf/MyResume.pdf">MyResume</A>                        
         </div>
     </div>
 
@@ -139,13 +138,32 @@
             <a href="https://github.com/asmelash/"><strong>GitHub</strong> </a><br><br>
             <a href="tel:+91 91367 80540"><strong>Call: +91 91367 80540</strong> </a>
         </p>
-    </div>
+				<!xx>        
+                <form action="https://formspree.io/asmelash@iitb.ac.in" method="POST">
+                    <!--label for="fname">Name</label>-->
+                    <input type="text" id="name" name="name" placeholder="Your Name">
 
-</div>  
-  <!--subset-->           
-    </div>
-</div> 
-<!--Courses-->    
+                    <!--label for="email">Email</label>-->
+                    <input type="text" id="email" name="email" placeholder="Your Email">
+
+                    <!--label for="message">Message</label>-->
+                    <textarea id="message" name="message" placeholder="What's on your mind ..."
+                    style="height:100px"></textarea>
+                    
+                    <button type="submit">
+                        <i class="fa fa-paper-plane mr-2"></i> Send
+                    </button>
+                </form>
+				<!xx>            
+            				
+    </div>   
+
+	</div>  
+  	<!--subset-->           
+  	</div>
+	</div> 
+
+	<!--Courses-->    
     <div class="container">
         <div class="row">
         
@@ -160,7 +178,7 @@
                         <p>Turbomachinery and Propulsion</p>                                                                                  
                         <p>Numerical Solution of ODEs and PDEs</p>    
                         <p>Wind Energy Systems (HAWT/VAWTs)</p>     
-                        <p>Design of Aircraft and GTE </p>                     
+                        <p>Aircraft GTE: Theory & Design </p>                     
                         <p>CAD modeling and CFD Software</p>                                                                        
                     </div>
                 </div>
@@ -169,7 +187,7 @@
         </div>
     </div>      
 
-<!--Projects-->    
+	<!--Projects-->    
     <div class="container">
         <div class="row">
         
@@ -198,8 +216,8 @@
         </div>
     </div>    
 
-<!--Publications-->    
-<div class="container">
+	<!--Publications-->    
+	<div class="container">
     <div class="row">
         <div class="col-md-8">
             <div class="row shadow bg-light mx-1 px-4 pt-5 pb-4">
@@ -224,55 +242,73 @@
         </div>            
         
     </div>
-</div>
+	</div>
 
-<!--Software-->    
-<div class="container">
+	<!--Software-->    
+	<div class="container">
     <div class="row">
     
         <div class="col-md-8">
             <div class="row shadow bg-light mx-1 px-4 pt-5 pb-4">
                 <div class="col" style="background: yellowgreen; color: blue;">                    
                     <h2>Software</h2>
-                    <p>Open Source/Free software</p> 
+                    <p>Open Source/Free Software</p> 
                     <ul> 
-                    <li><a href ="#"> <strong>CFD:</strong> OpenFOAM <u>&</u> PySPH</a></li>
-                    <li><a href ="#"> ANSYSFluent, Solidworks</a></li>
+                    <li><a href ="#"> <strong>CFD:</strong> OpenFOAM <u>&</u> PySPH</a></li>                    
                     <li><a href ="#"> Paraview, Mayavi, Inkscape</a></li>
                     <li><a href ="#"> Salome, FreeCAD, Blender</a></li>		
                     <li><a href ="#"> Gmesh, snappyHexMesh, cfMesh</a></li>		
                     <li><a href ="#"> FAST, OpenFAST, SOWFA</a></li>							
                     <li><a href ="#"> <strong>Code:</strong> Python, C++, LaTeX</a></li>
-                    <li><a href ="#"> MPI, OpenMP, Video editing</a></li>
-                    <li><a href ="#"> HTML, CSS, Bootstrap, JS </a></li>
-                    <li><a href ="#"> Angular, Ionic </a></li>
+                    <li><a href ="#"> Linux, Windows, MPI, OpenMP</a></li>                    
+                    <li><a href ="#"> HTML, CSS, JS, Angular, Ionic</a></li>
+                    <li><a href ="#"> Video editing softwares </a></li>
+                    <li><a href ="#"> Others</a></li>
                     <!-- Origin, tecplot, xfig, matplotlib, Excel -->
-                    </ul>                                                  
+                    </ul>
+                    <p>Commercial Software</p> 
+                    <ul>
+                    <li><a href ="#"> ANSYSFluent, Solidworks</a></li>
+                    <li><a href ="#"> ANSA, ICEMCFD, STR CCM+</a></li>
+                    </ul>                                                               
                 </div>           
             </div>
         </div>
                     
     </div>
-</div>    
+	</div>    
 
-<!--Research-->    
-<div class="container">
+	<!--Research-->    
+	<div class="container">
     <div class="row">
     
         <div class="col-md-8">
             <div class="row shadow bg-light mx-1 px-4 pt-5 pb-4">
-                <div class="col" style="background: yellowgreen; color: blue;">                    
-                    <h2>Research</h2>
-                    <p><A href="pdf/MyResume.pdf">MyResume</A></p>                                             
+                <div class="col" style="background: none; color: blue;">  <!--yellowgreen-->          
+                    <h2>Research</h2>	<br>
+                    <p><A href="pdf/MyResume.pdf">MyResume</A></p>  <br><br>                                                          
+             		<p> VAWT CFD Simulation </p>    
+            		<video width="650" height="420" controls>
+            		<source src="video/vawt3b.ogv" type="video/ogg">            		          
+                </div>                
+                <div class="col" style="background: none; color: blue;">   <br><br>                 
+            		<p> HAWT CFD Simulation </p>    
+            		<video width="650" height="420" controls>
+            		<source src="video/hawt50.ogv" type="video/ogg">            
+                </div>                
+                <div class="col" style="background: none; color: blue;">   <br><br>           
+            		<p> Heaving Airfoil using OpenFOAM</p>    
+            		<video width="650" height="420" controls>
+            		<source src="video/anim4.ogv" type="video/ogg">   
                 </div>
+                
             </div>
         </div>
                     
     </div>
-</div> 
+	</div> 
 
 <!--END-->>
-
             
-    </body>        
-    </html>
+</body>        
+</html>
