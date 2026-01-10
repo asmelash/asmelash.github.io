@@ -8,70 +8,53 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <style>
         :root { --primary-blue: #002147; --tech-blue: #007FFF; }
-        body { font-family: 'Inter', sans-serif; overflow-x: hidden; }
-        
-        /* Animated Hero Section */
-        .hero { 
-            background: linear-gradient(135deg, var(--primary-blue) 0%, #004080 100%);
-            color: white; padding: 100px 0; position: relative;
-        }
-        
-        .btn-tech { background: var(--tech-blue); color: white; border-radius: 30px; padding: 10px 25px; transition: 0.3s; }
-        .btn-tech:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(0,127,255,0.3); color: white; }
-
-        /* Video Container */
-        .video-box { 
-            background: #000; border-radius: 15px; overflow: hidden; 
-            box-shadow: 0 20px 40px rgba(0,0,0,0.2); margin-top: -50px;
-        }
+        body { font-family: 'Inter', sans-serif; }
+        .hero { background: linear-gradient(135deg, var(--primary-blue) 0%, #004080 100%); color: white; padding: 100px 0; }
+        .video-box { background: #000; border-radius: 15px; overflow: hidden; box-shadow: 0 20px 40px rgba(0,0,0,0.3); }
+        .nav-link { font-weight: 500; }
     </style>
 </head>
 <body>
-
     <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
         <div class="container">
-            <a class="navbar-brand" href="#"><strong>EDU<span style="color:var(--tech-blue)">REST</span></strong></a>
-            <div class="collapse navbar-collapse" id="navbarNav">
+            <a class="navbar-brand" href="index.html"><strong>EDU<span style="color:var(--tech-blue)">REST</span></strong></a>
+            <div class="collapse navbar-collapse">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="teaching.html">Teaching</a></li>
                     <li class="nav-item"><a class="nav-link" href="research.html">Research</a></li>
                     <li class="nav-item"><a class="nav-link" href="software.html">Software</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tools.html">Tools</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <header class="hero">
+    <header class="hero text-center">
         <div class="container animate__animated animate__fadeIn">
             <h1 class="display-3 fw-bold">Scaling the Peak of Fluid Dynamics</h1>
-            <p class="lead mb-4">Bridging Academic Research with High-Performance Technology</p>
-            <a href="#about" class="btn btn-tech">Explore My Work</a>
+            <p class="lead">Research, Education, and Technology Development at IIT Bombay</p>
         </div>
     </header>
 
-    <section id="about" class="container py-5">
+    <section class="container py-5">
         <div class="row align-items-center">
-            <div class="col-md-6 animate__animated animate__slideInLeft">
+            <div class="col-md-6 mb-4">
                 <div class="video-box">
                     <div style="padding:56.25% 0 0 0;position:relative;">
-                        <iframe src=" https://youtu.be/NXwFNuot1Qo" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                        <iframe src="https://www.youtube.com/embed/NXwFNuot1Qo" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
                     </div>
                 </div>
+                <p class="text-muted mt-2 text-center"><em>Simulation: 2-Blade VAWT using OpenFOAM</em></p>
             </div>
-            <div class="col-md-6 ps-md-5 animate__animated animate__slideInRight">
-                <h2 class="fw-bold">The Vision</h2>
-                <p>Welcome to <strong>Edurest</strong>. I am a researcher at <strong>IIT Bombay</strong> specializing in Thermofluid Sciences. My mission is to simplify complex engineering through technology.</p>
-                <ul>
-                    <li>High-fidelity <strong>OpenFOAM</strong> Simulations</li>
-                    <li>Hybrid Renewable Energy Optimization</li>
-                    <li>Open-source Engineering Tool Development</li>
-                </ul>
+            <div class="col-md-6 ps-md-5">
+                <h2 class="fw-bold">Welcome to Edurest</h2>
+                <p>I am a researcher specializing in <strong>Mechanical Engineering and Thermofluid Sciences</strong>. My work bridges the gap between complex numerical simulations and sustainable energy solutions.</p>
+                <p>At Edurest, I document my journey in CFD, hybrid renewables, and the development of open-source engineering tools.</p>
+                <a href="teaching.html" class="btn btn-outline-primary">View Courses</a>
             </div>
         </div>
     </section>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
