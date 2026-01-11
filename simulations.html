@@ -3,20 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simulations Gallery | Edurest</title>
+    <title>Simulations | Edurest</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <style>
         :root { --primary-blue: #002147; --tech-blue: #007FFF; }
-        body { font-family: 'Inter', sans-serif; background-color: #f4f7f9; }
+        body { font-family: 'Inter', sans-serif; background-color: #f8f9fa; }
         .nav-link { font-weight: 500; color: var(--primary-blue) !important; }
-        .filter-btn { border-radius: 20px; padding: 5px 20px; margin: 5px; border: 1px solid var(--tech-blue); color: var(--tech-blue); background: white; transition: 0.3s; cursor: pointer; }
-        .filter-btn.active, .filter-btn:hover { background: var(--tech-blue); color: white; }
-        .sim-card { border: none; border-radius: 15px; overflow: hidden; transition: 0.3s; background: white; display: block; }
+        .nav-link.active { border-bottom: 2px solid var(--tech-blue); }
+        .sim-card { border: none; border-radius: 15px; overflow: hidden; transition: 0.3s; background: white; }
         .sim-card:hover { transform: translateY(-10px); box-shadow: 0 15px 30px rgba(0,0,0,0.1); }
         .video-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; background: #000; }
         .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
-        .tag { font-size: 0.7rem; font-weight: bold; padding: 3px 10px; border-radius: 10px; background: #e9ecef; margin-right: 5px; }
+        .tag { font-size: 0.7rem; font-weight: bold; padding: 3px 10px; border-radius: 10px; background: #e9ecef; margin-right: 5px; color: #555; }
+        .filter-btn { border-radius: 20px; padding: 5px 20px; margin: 5px; border: 1px solid var(--tech-blue); color: var(--tech-blue); background: white; transition: 0.3s; cursor: pointer; }
+        .filter-btn.active, .filter-btn:hover { background: var(--tech-blue); color: white; }
         .hidden { display: none !important; }
     </style>
 </head>
@@ -25,12 +26,16 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
         <div class="container">
             <a class="navbar-brand" href="index.html"><strong>EDU<span style="color:var(--tech-blue)">REST</span></strong></a>
-            <div class="collapse navbar-collapse">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="teaching.html">Teaching</a></li>
                     <li class="nav-item"><a class="nav-link" href="research.html">Research</a></li>
                     <li class="nav-item"><a class="nav-link active" href="simulations.html">Simulations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="software.html">Software</a></li>
                     <li class="nav-item"><a class="nav-link" href="tools.html">Tools</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                 </ul>
@@ -38,71 +43,76 @@
         </div>
     </nav>
 
-    <div class="container py-5">
-        <h1 class="fw-bold text-center mb-2 animate__animated animate__fadeInDown">Computational Gallery</h1>
-        <p class="text-center text-muted mb-5">Visualizing Thermofluid Phenomena and Energy System Dynamics</p>
-
-        <div class="text-center mb-5 animate__animated animate__fadeIn">
-            <button class="filter-btn active" onclick="filterSelection('all')">All</button>
-            <button class="filter-btn" onclick="filterSelection('openfoam')">OpenFOAM</button>
-            <button class="filter-btn" onclick="filterSelection('sph')">SPH</button>
-            <button class="filter-btn" onclick="filterSelection('nrel')">NREL SAM</button>
-            <button class="filter-btn" onclick="filterSelection('mesh')">Meshing</button>
+    <header class="py-5 bg-white border-bottom text-center">
+        <div class="container animate__animated animate__fadeIn">
+            <h1 class="fw-bold display-5">Computational Gallery</h1>
+            <p class="lead text-muted">High-fidelity CFD visualizations and OpenFOAM case studies.</p>
         </div>
+    </header>
 
+    <div class="container py-4 text-center">
+        <button class="filter-btn active" onclick="filterSelection('all')">All Simulations</button>
+        <button class="filter-btn" onclick="filterSelection('vawt')">VAWT</button>
+        <button class="filter-btn" onclick="filterSelection('hawt')">HAWT</button>
+    </button>
+    </div>
+
+    <div class="container py-4">
         <div class="row g-4" id="galleryGrid">
             
-            <div class="col-md-6 col-lg-4 filter-item openfoam">
+            <div class="col-md-6 col-lg-4 filter-item vawt">
                 <div class="card sim-card shadow-sm h-100">
                     <div class="video-container">
                         <iframe src="https://www.youtube.com/embed/uI6rPAVYp2Q" frameborder="0" allowfullscreen></iframe>
                     </div>
                     <div class="card-body">
-                        <span class="tag text-primary">OpenFOAM</span><span class="tag">VAWT</span>
-                        <h5 class="fw-bold mt-2">2-Blade Dynamic Mesh</h5>
-                        <p class="small text-muted">Analysis of rotation and wake development using sliding mesh interfaces.</p>
+                        <span class="tag">OpenFOAM</span><span class="tag">Sliding Mesh</span>
+                        <h5 class="fw-bold mt-2">2-Blade VAWT Kinematics</h5>
+                        <p class="small text-muted">Simulation of blade rotation and wake development using dynamic mesh interfaces.</p>
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-6 col-lg-4 filter-item openfoam">
+            <div class="col-md-6 col-lg-4 filter-item vawt">
                 <div class="card sim-card shadow-sm h-100">
                     <div class="video-container">
                         <iframe src="https://www.youtube.com/embed/7MEAo2nXUsM" frameborder="0" allowfullscreen></iframe>
                     </div>
                     <div class="card-body">
-                        <span class="tag text-success">Turbulence</span><span class="tag text-primary">OpenFOAM</span>
+                        <span class="tag">OpenFOAM</span><span class="tag">Pressure Contour</span>
                         <h5 class="fw-bold mt-2">Surface Pressure Distribution</h5>
-                        <p class="small text-muted">Visualization of pressure gradients and aerodynamic loading.</p>
+                        <p class="small text-muted">Mapping aerodynamic loading across the turbine rotation cycle.</p>
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-6 col-lg-4 filter-item openfoam">
+            <div class="col-md-6 col-lg-4 filter-item hawt">
+                <div class="card sim-card shadow-sm h-100">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/qQhKXk9FkTo" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="card-body">
+                        <span class="tag">OpenFOAM</span><span class="tag">HAWT</span>
+                        <h5 class="fw-bold mt-2">HAWT Aerodynamics</h5>
+                        <p class="small text-muted">Full-scale flow field simulation of a Horizontal Axis Wind Turbine.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 filter-item vawt">
                 <div class="card sim-card shadow-sm h-100">
                     <div class="video-container">
                         <iframe src="https://www.youtube.com/embed/rtQMsZM5km0" frameborder="0" allowfullscreen></iframe>
                     </div>
                     <div class="card-body">
-                        <span class="tag text-primary">OpenFOAM</span>
-                        <h5 class="fw-bold mt-2">Pressure Contour Analysis</h5>
-                        <p class="small text-muted">Detailed pressure mapping across turbine rotation cycles.</p>
+                        <span class="tag">OpenFOAM</span><span class="tag">Vorticity</span>
+                        <h5 class="fw-bold mt-2">3-Blade VAWT Analysis</h5>
+                        <p class="small text-muted">Detailed visualization of vortex shedding patterns in a multi-blade system.</p>
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-6 col-lg-4 filter-item sph">
-                <div class="card sim-card shadow-sm h-100">
-                    <img src="https://via.placeholder.com/400x225?text=Vorticity+GIF" class="img-fluid" alt="Vorticity Analysis">
-                    <div class="card-body">
-                        <span class="tag text-danger">SPH</span><span class="tag text-warning">Vorticity</span>
-                        <h5 class="fw-bold mt-2">Vorticity Magnitude Analysis</h5>
-                        <p class="small text-muted">GIF representation of vortex shedding using weakly-compressible SPH.</p>
-                    </div>
-                </div>
-            </div>
-
-            </div>
+        </div>
     </div>
 
     <footer class="bg-white py-4 text-center border-top mt-5">
@@ -111,26 +121,23 @@
 
     <script>
         function filterSelection(c) {
-            var x, i;
-            x = document.getElementsByClassName("filter-item");
+            var x = document.getElementsByClassName("filter-item");
             if (c == "all") c = "";
-            for (i = 0; i < x.length; i++) {
+            for (var i = 0; i < x.length; i++) {
                 x[i].classList.add("hidden");
                 if (x[i].className.indexOf(c) > -1) {
                     x[i].classList.remove("hidden");
                 }
             }
-            
-            // Add active class to the current button
+            // Toggle Active Class
             var btns = document.getElementsByClassName("filter-btn");
             for (var i = 0; i < btns.length; i++) {
                 btns[i].classList.remove("active");
-                if (btns[i].innerText.toLowerCase() === (c === "" ? "all" : c)) {
-                    btns[i].classList.add("active");
-                }
             }
+            event.currentTarget.classList.add("active");
         }
     </script>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
