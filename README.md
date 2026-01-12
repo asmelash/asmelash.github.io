@@ -6,7 +6,7 @@
 ---
 
 ### 🚀 Research Focus
-- **OpenFOAM Development:** Custom solvers for VAWT and HAWT kinematics.
+- **CFD with OpenFOAM Software:** Aerospace, Energy - VAWT/HAWT Aerodynamics.
 - **Fluid-Structure Interaction:** Sliding and Overset mesh strategies.
 - **Sustainable Energy:** Hybridizing Solar and Wind for urban environments.
 
@@ -14,5 +14,7 @@
 - **CFD:** OpenFOAM, SPH, pimpleFoam, oversetFoam
 - **Tools:** Python (Data Science), C++, LaTeX, ParaView
 - **Meshing:** snappyHexMesh, GMSH, Salome
-
+- **Others:** SAM, QGIS, CAD, OpenFAST, SU2
+- **Commercial software:** ANSYS-Fluent, COMSOL
+  
 ### 📈 Current Stats
