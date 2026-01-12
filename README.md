@@ -1,5 +1,5 @@
 # Hi, I'm Asmelash Amaha 👋
-### PhD Researcher | CFD Specialist | IIT Bombay
+### Researcher & CFD Specialist
 
 [🌐 Visit my full Academic Portfolio](https://asmelash.github.io/)
 
