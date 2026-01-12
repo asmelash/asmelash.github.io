@@ -16,5 +16,5 @@
 - **Meshing:** snappyHexMesh, GMSH, Salome
 - **Others:** SAM, QGIS, CAD, OpenFAST, SU2
 - **Commercial software:** ANSYS-Fluent, COMSOL
-  
+
 ### 📈 Current Stats
