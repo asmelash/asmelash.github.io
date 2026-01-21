@@ -25,6 +25,11 @@ URANS simulation showing wake development and vorticity structures.
 
 *URANS-based CFD simulation illustrating wake development and unsteady flow features around a vertical-axis wind turbine.*
 
+[![CFD simulation of track-based wind turbine](https://img.youtube.com/vi/rtQMsZM5km0/hqdefault.jpg)](https://youtu.be/rtQMsZM5km0)
+
+*Representative CFD simulation of track-based vertical-axis wind turbine aerodynamics (OpenFOAM).*
+
+
 <!-- 
 ## Vertical-Axis Wind Turbine – Unsteady Flow Structures
 {% raw %}
