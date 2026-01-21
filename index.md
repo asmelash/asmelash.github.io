@@ -1,17 +1,17 @@
 ---
-layout: default
+layout: default - Edurest
 title: "Asmelash Haftu Amaha – Research Portfolio"
 ---
 
 # Asmelash Haftu Amaha, PhD
-**Computational Fluid Dynamics | Wind Energy | Renewable Energy Systems**  
+**Computational Fluid Dynamics | Wind Energy | Hybrid Renewable Energy**  
 IIT Bombay, Maharashtra, India  
 📧 asmelashx@gmail.com  
 
 ---
 
 ## Research Focus
-My research centers on high-fidelity **computational fluid dynamics (CFD)** for wind energy and renewable energy systems. I specialize in turbulence modeling, moving-geometry simulations (sliding and overset meshes), and aerodynamic analysis of unconventional wind turbines using **OpenFOAM** and high-performance computing workflows. My long-term goal is to bridge component-level CFD with system-level energy and sustainability applications.
+My research centers on high-fidelity **computational fluid dynamics (CFD)** for aerospace, mechanical, and wind/renewable energy systems. I specialize in CFD with turbulence modeling, moving-geometry simulations (sliding and overset meshes), and aerodynamic analysis of unconventional wind turbines using **OpenFOAM** and high-performance computing workflows. My goal is to bridge component-level CFD with system-level energy and sustainability applications.
 
 ---
 
