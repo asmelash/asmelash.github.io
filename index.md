@@ -2,6 +2,11 @@
 layout: default - Edurest
 title: "Asmelash Haftu Amaha – Research Portfolio"
 ---
+[Research](#research-focus) ·
+[Projects](#selected-projects) ·
+[Publications](#publications-selected) ·
+[CV & Links](#links--cv)
+---
 
 # Asmelash Haftu Amaha, PhD
 **Computational Fluid Dynamics | Wind Energy | Hybrid Renewable Energy**  
