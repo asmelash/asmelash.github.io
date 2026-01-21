@@ -60,7 +60,8 @@ A complete and verified publication record is available via ORCID and Google Sch
 - 📚 **Google Scholar:** https://tinyurl.com/mrxf7u3e
 - 💻 **GitHub:** https://github.com/asmelash
 - 🔗 **LinkedIn:** https://linkedin.com/in/asmelash4
-- - 📘 Teaching & Pedagogy: [Overview](teaching.md)
+- 📘 Teaching & Pedagogy: [Overview](teaching.md)
+- 🧰 Tools & Methods: [Details](tools.md)
 
 
 ---
