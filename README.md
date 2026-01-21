@@ -18,3 +18,20 @@
 - **Commercial software:** ANSYS-Fluent, COMSOL
 
 ### 📈 Current Stats
+---
+
+# Asmelash Haftu Amaha – Research Portfolio
+
+This repository hosts my academic research portfolio.
+
+Live site: https://asmelash.github.io/
+---
+asmelash.github.io/
+├── index.md          ← main homepage
+├── teaching.md       ← hidden faculty depth
+├── tools.md          ← hidden methods depth
+├── media.md          ← simulations gallery
+├── media/            ← mp4 / images
+├── files/            ← CV PDF
+├── README.md
+├── index_old.xhtml.txt  ← archived HTML (safe)
