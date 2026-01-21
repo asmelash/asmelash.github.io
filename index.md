@@ -2,17 +2,17 @@
 layout: default - Edurest
 title: "Asmelash Haftu Amaha – Research Portfolio"
 ---
-[Research](#research-focus) ·
-[Projects](#selected-projects) ·
-[Publications](#publications-selected) ·
-[CV & Links](#links--cv)
----
 
 # Asmelash Haftu Amaha, PhD
 **Computational Fluid Dynamics | Wind Energy | Hybrid Renewable Energy**  
 IIT Bombay, Maharashtra, India  
 📧 asmelashx@gmail.com  
 
+---
+[Research](#research-focus) ·
+[Projects](#selected-projects) ·
+[Publications](#publications-selected) ·
+[CV & Links](#links--cv)
 ---
 
 ## Research Focus
@@ -60,6 +60,8 @@ A complete and verified publication record is available via ORCID and Google Sch
 - 📚 **Google Scholar:** https://tinyurl.com/mrxf7u3e
 - 💻 **GitHub:** https://github.com/asmelash
 - 🔗 **LinkedIn:** https://linkedin.com/in/asmelash4
+- - 📘 Teaching & Pedagogy: [Overview](teaching.md)
+
 
 ---
 
