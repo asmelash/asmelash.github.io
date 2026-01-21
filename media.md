@@ -6,13 +6,20 @@ title: CFD Simulation Visualizations
 # CFD Simulation Visualizations
 
 ## Track-Based VAWT – Unsteady Wake
-<video controls width="600">
-  <source src="media/vawt_track.mp4" type="video/mp4">
-</video>
+*URANS-based CFD simulation illustrating wake development and unsteady flow features around a vertical-axis wind turbine.*
 
-URANS simulation showing wake development and vorticity structures.
+[![CFD simulation of track-based wind turbine](https://img.youtube.com/vi/rtQMsZM5km0/hqdefault.jpg)](https://youtu.be/rtQMsZM5km0)
+
+*Representative CFD simulation of track-based vertical-axis wind turbine aerodynamics (OpenFOAM).*
 
 
+## Vertical-Axis Wind Turbine – Unsteady Flow Structures
+
+[![VAWT CFD simulation](https://img.youtube.com/vi/uI6rPAVYp2Q/hqdefault.jpg)](https://youtu.be/uI6rPAVYp2Q)
+
+*URANS-based CFD simulation illustrating wake development and unsteady flow features around a vertical-axis wind turbine.*
+
+<!-- 
 ## Vertical-Axis Wind Turbine – Unsteady Flow Structures
 
 <iframe width="560" height="315"
@@ -23,26 +30,11 @@ URANS simulation showing wake development and vorticity structures.
   allowfullscreen>
 </iframe>
 
-*URANS-based CFD simulation illustrating wake development and unsteady flow features around a vertical-axis wind turbine.*
+<video controls width="600">
+  <source src="media/vawt_track.mp4" type="video/mp4">
+</video>
+URANS simulation showing wake development and vorticity structures.
 
-[![CFD simulation of track-based wind turbine](https://img.youtube.com/vi/rtQMsZM5km0/hqdefault.jpg)](https://youtu.be/rtQMsZM5km0)
-
-*Representative CFD simulation of track-based vertical-axis wind turbine aerodynamics (OpenFOAM).*
-
----
-layout: default
-title: CFD Simulation Visualizations
----
-
-# CFD Simulation Visualizations
-
-## Vertical-Axis Wind Turbine – Unsteady Flow Structures
-
-[![VAWT CFD simulation](https://img.youtube.com/vi/uI6rPAVYp2Q/hqdefault.jpg)](https://youtu.be/uI6rPAVYp2Q)
-
-*URANS-based CFD simulation illustrating wake development and unsteady flow features around a vertical-axis wind turbine.*
-
-<!-- 
 ## Vertical-Axis Wind Turbine – Unsteady Flow Structures
 {% raw %}
 <iframe width="560" height="315"
