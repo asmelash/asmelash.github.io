@@ -11,3 +11,11 @@ As a researcher specializing in **Mechanical Engineering and Thermofluid Science
 
 ### Navigation
 [Teaching](./teaching) | [Research](./research) | [Software](./software) | [Energy Systems](./energy-systems) | [Tools](./tools) | [Contact](./contact)
+
+
+
+- [Research Focus](#current-research-focus)
+- [Projects](#selected-research-projects)
+- [Publications](#publications-selected)
+- [CV](#cv--presentations)
+
