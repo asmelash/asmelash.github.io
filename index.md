@@ -19,6 +19,18 @@ IIT Bombay, Maharashtra, India
 My research centers on high-fidelity **computational fluid dynamics (CFD)** for aerospace, mechanical, and wind/renewable energy systems. I specialize in CFD with turbulence modeling, moving-geometry simulations (sliding and overset meshes), and aerodynamic analysis of unconventional wind turbines using **OpenFOAM** and high-performance computing workflows. My goal is to bridge component-level CFD with system-level energy and sustainability applications.
 
 ---
+<div style="margin: 30px 0;">
+  <iframe width="560" height="315"
+    src="https://www.youtube.com/embed/rtQMsZM5km0"
+    title="CFD simulation of track-based wind turbine"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+  </iframe>
+  <p><em>Representative CFD simulation of track-based vertical-axis wind turbine aerodynamics (OpenFOAM).</em></p>
+</div>
+
+---
 
 ## Selected Projects
 
