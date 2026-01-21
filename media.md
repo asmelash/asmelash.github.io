@@ -15,6 +15,17 @@ URANS simulation showing wake development and vorticity structures.
 
 ## Vertical-Axis Wind Turbine – Unsteady Flow Structures
 
+{% raw %}
+<iframe width="560" height="315"
+  src="https://www.youtube.com/embed/uI6rPAVYp2Q"
+  title="VAWT CFD simulation"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen>
+</iframe>
+{% endraw %}
+
+
 <iframe width="560" height="315"
   src="https://www.youtube.com/embed/uI6rPAVYp2Q"
   title="VAWT CFD simulation"
@@ -24,6 +35,20 @@ URANS simulation showing wake development and vorticity structures.
 </iframe>
 
 *URANS-based CFD simulation illustrating wake development and unsteady flow features around a vertical-axis wind turbine.*
+
+
+## Vertical-Axis Wind Turbine – Unsteady Flow Structures
+
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/uI6rPAVYp2Q"
+title="VAWT CFD simulation"
+frameborder="0"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+allowfullscreen>
+</iframe>
+
+*URANS-based CFD simulation illustrating wake development and unsteady flow features around a vertical-axis wind turbine.*
+
 
 
 <!-- 
