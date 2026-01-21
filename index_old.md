@@ -1,6 +1,6 @@
 # Edurest
 
-## Scaling the Peak of Fluid Dynamics and Sustainable Energy Systems
+## Scaling Fluid Dynamics and Sustainable Energy Systems
 *Bridging Academic Research with High-Performance Technology*
 
 Welcome to **Edurest**, a digital laboratory dedicated to the intersection of **Education, Research, and Technology**. 
