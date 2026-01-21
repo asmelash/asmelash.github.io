@@ -21,8 +21,8 @@ My research centers on high-fidelity **computational fluid dynamics (CFD)** for 
 ---
 
 [![CFD simulation of track-based wind turbine](https://img.youtube.com/vi/rtQMsZM5km0/hqdefault.jpg)](https://youtu.be/rtQMsZM5km0)
-
-*Representative CFD simulation of 3 blade vertical-axis wind turbine aerodynamics (OpenFOAM).* *URANS-based CFD simulation illustrating wake development and unsteady flow features around a vertical-axis wind turbine.*
+*URANS-based CFD simulation illustrating wake development and unsteady flow features around a vertical-axis wind turbine.* 
+*CFD simulation of a representative 3 blade vertical-axis wind turbine aerodynamics (OpenFOAM).* 
 
 
 ---
