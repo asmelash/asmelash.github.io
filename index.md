@@ -62,6 +62,8 @@ A complete and verified publication record is available via ORCID and Google Sch
 - 🔗 **LinkedIn:** https://linkedin.com/in/asmelash4
 - 📘 Teaching & Pedagogy: [Overview](teaching.md)
 - 🧰 Tools & Methods: [Details](tools.md)
+- 🎥 CFD Visualizations: [Selected simulations](media.md)
+
 
 
 ---
