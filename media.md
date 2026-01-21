@@ -1,6 +1,6 @@
 ---
 layout: default
-title: CFD Visualizations
+title: CFD Simulation Visualizations
 ---
 
 # CFD Simulation Visualizations
@@ -12,16 +12,19 @@ title: CFD Visualizations
 
 URANS simulation showing wake development and vorticity structures.
 
-## Vertical-Axis Turbine – Dynamic Stall
-<video controls width="600">
-  <source src="media/vawt_stall.mp4" type="video/mp4">
-</video>
 
-<video controls width="600">
+## Vertical-Axis Wind Turbine – Unsteady Flow Structures
+
 <iframe width="560" height="315"
-src="https://youtu.be/uI6rPAVYp2Q"
-frameborder="0" allowfullscreen></iframe>
-</video>
+  src="https://www.youtube.com/embed/uI6rPAVYp2Q"
+  title="VAWT CFD simulation"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen>
+</iframe>
+
+*URANS-based CFD simulation illustrating wake development and unsteady flow features around a vertical-axis wind turbine.*
+
 
 <!-- 
 <iframe width="560" height="315"
