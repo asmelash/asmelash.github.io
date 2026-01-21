@@ -63,7 +63,7 @@ A complete and verified publication record is available via ORCID and Google Sch
 ---
 
 ## Links & CV
-- 📄 **CV (PDF):** [Download](files/Asmelash_Haftu_Amaha_CV.pdf)
+- 📄 **CV (PDF):** [Download](CV_Asmelash_Amaha.pdf)
 - 🔗 **ORCID:** https://orcid.org/0000-0000-0000-0000
 - 📚 **Google Scholar:** https://tinyurl.com/mrxf7u3e
 - 💻 **GitHub:** https://github.com/asmelash
