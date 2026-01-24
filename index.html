@@ -8,185 +8,146 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <style>
-        :root { --primary-blue: #002147; --tech-blue: #007FFF; --soft-bg: #f8f9fa; }
-        body { font-family: 'Inter', system-ui, -apple-system, sans-serif; color: #333; line-height: 1.6; background-color: white; }
+        :root { --primary-blue: #002147; --tech-blue: #007FFF; --dark-slate: #2d3436; }
+        body { font-family: 'Inter', system-ui, -apple-system, sans-serif; color: #333; line-height: 1.7; }
         
-        /* Navigation */
-        .navbar { background: rgba(255, 255, 255, 0.95) !important; backdrop-filter: blur(10px); border-bottom: 1px solid #eee; }
-        .nav-link { font-weight: 500; color: var(--primary-blue) !important; margin: 0 10px; }
-        .nav-link:hover { color: var(--tech-blue) !important; }
-
-        /* Hero Section */
-        .hero { background: linear-gradient(135deg, var(--primary-blue) 0%, #004080 100%); color: white; padding: 100px 0 60px; }
-        .hero h1 { font-weight: 800; letter-spacing: -1px; }
-        .badge-tech { background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.3); color: white; padding: 5px 15px; border-radius: 20px; font-size: 0.9rem; }
-
-        /* Content Sections */
-        section { padding: 80px 0; border-bottom: 1px solid #eee; }
-        .section-title { font-weight: 700; color: var(--primary-blue); margin-bottom: 40px; position: relative; }
-        .section-title::after { content: ''; display: block; width: 50px; height: 4px; background: var(--tech-blue); margin-top: 10px; }
-
-        /* Project Cards */
-        .project-card { border: none; border-left: 4px solid var(--tech-blue); background: var(--soft-bg); transition: 0.3s; }
-        .project-card:hover { transform: translateX(10px); background: #eef6ff; }
-
-        /* Video/Image Container */
-        .media-box { border-radius: 12px; overflow: hidden; box-shadow: 0 20px 40px rgba(0,0,0,0.1); transition: 0.3s; }
-        .media-box:hover { transform: scale(1.02); }
-
-        /* Publication List */
-        .pub-item { margin-bottom: 25px; padding-left: 20px; border-left: 2px solid #ddd; }
-        .pub-author { font-weight: 600; color: #555; }
-        .pub-title { font-weight: 700; color: var(--primary-blue); display: block; }
-        .pub-journal { font-style: italic; color: var(--tech-blue); }
-
-        /* Footer */
-        footer { background: var(--soft-bg); padding: 40px 0; font-size: 0.9rem; color: #777; }
+        .navbar { background: #fff; border-bottom: 2px solid var(--tech-blue); }
+        .hero { background: var(--primary-blue); color: white; padding: 100px 0 60px; }
         
-        .btn-cv { background: var(--tech-blue); color: white; font-weight: 600; border-radius: 30px; padding: 12px 30px; transition: 0.3s; text-decoration: none; display: inline-block; }
-        .btn-cv:hover { background: var(--primary-blue); color: white; transform: translateY(-2px); }
+        /* Media Card Styling */
+        .project-card { border: none; border-radius: 12px; overflow: hidden; background: #fff; box-shadow: 0 4px 15px rgba(0,0,0,0.08); transition: 0.3s; }
+        .project-card:hover { transform: translateY(-10px); box-shadow: 0 12px 25px rgba(0,0,0,0.15); }
+        .video-thumb { position: relative; display: block; }
+        .play-overlay { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 3rem; color: white; opacity: 0.8; }
+        
+        .section-title { font-weight: 800; color: var(--primary-blue); margin-bottom: 2rem; border-left: 5px solid var(--tech-blue); padding-left: 15px; }
+        .pub-item { border-bottom: 1px solid #eee; padding: 15px 0; }
+        .btn-main { background: var(--tech-blue); color: white; border-radius: 50px; padding: 10px 25px; font-weight: 600; text-decoration: none; }
     </style>
 </head>
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-light sticky-top">
         <div class="container">
-            <a class="navbar-brand" href="#"><strong>EDU<span style="color:var(--tech-blue)">REST</span></strong></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+            <a class="navbar-brand" href="#"><strong>ASME<span style="color:var(--tech-blue)">LASH</span></strong></a>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="#research">Research</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Simulations</a></li>
                     <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
                     <li class="nav-item"><a class="nav-link" href="teaching.html">Teaching</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#links">CV & Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#links">CV</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <header class="hero">
-        <div class="container text-center animate__animated animate__fadeIn">
-            <h1 class="display-4">Asmelash Haftu Amaha, <span style="font-weight: 300;">PhD</span></h1>
-            <p class="lead opacity-75 mb-4">Computational Fluid Dynamics | Wind Energy | Hybrid Systems</p>
-            <div class="d-flex justify-content-center gap-2 flex-wrap mb-4">
-                <span class="badge-tech">IIT Bombay</span>
-                <span class="badge-tech">OpenFOAM</span>
-                <span class="badge-tech">Parallel SPH</span>
-                <span class="badge-tech">Aerodynamics</span>
-            </div>
-            <a href="mailto:asmelashx@gmail.com" class="text-white text-decoration-none"><i class="fas fa-envelope me-2"></i>asmelashx@gmail.com</a>
+    <header class="hero text-center">
+        <div class="container animate__animated animate__fadeIn">
+            <h1 class="display-4 fw-bold">Asmelash Haftu Amaha, PhD</h1>
+            <p class="lead">Computational Fluid Dynamics | Wind Energy | Hybrid Renewable Energy</p>
+            <p><i class="fas fa-map-marker-alt me-2"></i> IIT Bombay, Maharashtra, India</p>
         </div>
     </header>
 
-    <section id="research">
+    <section id="research" class="py-5">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-7">
-                    <h2 class="section-title">Research Focus</h2>
-                    <p class="lead">Bridging high-fidelity CFD simulations with sustainable energy infrastructure.</p>
-                    <p>I specialize in **computational fluid dynamics (CFD)** for aerospace and mechanical systems. My work involves turbulence modeling and moving-geometry simulations (sliding/overset meshes) to analyze unconventional wind turbines. Using **OpenFOAM** and high-performance computing, I bridge the gap between component-level aerodynamics and system-level sustainability.</p>
-                </div>
-                <div class="col-lg-5">
-                    <div class="media-box mt-4 mt-lg-0">
-                        <a href="https://youtu.be/rtQMsZM5km0" target="_blank">
-                            <img src="https://img.youtube.com/vi/rtQMsZM5km0/maxresdefault.jpg" class="img-fluid" alt="CFD Simulation Thumbnail">
+            <h2 class="section-title">Research Focus</h2>
+            <p>My research centers on high-fidelity <strong>computational fluid dynamics (CFD)</strong> for aerospace, mechanical, and wind/renewable energy systems. I specialize in turbulence modeling, moving-geometry simulations (sliding and overset meshes), and aerodynamic analysis of unconventional wind turbines using <strong>OpenFOAM</strong> and high-performance computing workflows.</p>
+        </div>
+    </section>
+
+    <section id="projects" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title">Selected Projects & Simulations</h2>
+            <div class="row g-4">
+                
+                <div class="col-md-6">
+                    <div class="project-card h-100">
+                        <a href="https://youtu.be/uI6rPAVYp2Q" target="_blank" class="video-thumb">
+                            <img src="https://img.youtube.com/vi/uI6rPAVYp2Q/maxresdefault.jpg" class="img-fluid" alt="Track-based VAWT">
+                            <i class="fab fa-youtube play-overlay"></i>
                         </a>
-                        <div class="p-3 bg-light">
-                            <p class="small text-muted mb-0"><i class="fas fa-play-circle me-2"></i> URANS-based CFD simulation: Wake development of a 3-blade VAWT.</p>
+                        <div class="p-4">
+                            <h5>Track-Based Vertical-Axis Wind Turbines</h5>
+                            <p class="small text-muted">Developed CFD frameworks using sliding and overset mesh techniques. Optimization of blade trajectories using URANS-based flow analysis.</p>
                         </div>
                     </div>
                 </div>
+
+                <div class="col-md-6">
+                    <div class="project-card h-100">
+                        <a href="https://youtu.be/rtQMsZM5km0" target="_blank" class="video-thumb">
+                            <img src="https://img.youtube.com/vi/rtQMsZM5km0/maxresdefault.jpg" class="img-fluid" alt="VAWT Wake Simulation">
+                            <i class="fab fa-youtube play-overlay"></i>
+                        </a>
+                        <div class="p-4">
+                            <h5>VAWT Aerodynamics & Wake Analysis</h5>
+                            <p class="small text-muted">Simulation illustrating wake development and unsteady flow features of a three-blade Darrieus-type turbine configuration.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="project-card h-100">
+                        <a href="https://youtu.be/qQhKXk9FkTo" target="_blank" class="video-thumb">
+                            <img src="https://img.youtube.com/vi/qQhKXk9FkTo/maxresdefault.jpg" class="img-fluid" alt="HAWT Simulation">
+                            <i class="fab fa-youtube play-overlay"></i>
+                        </a>
+                        <div class="p-4">
+                            <h5>Horizontal-Axis Wind Turbine (HAWT)</h5>
+                            <p class="small text-muted">Studied rotor performance and flow structures using <strong>OpenFAST</strong> and high-fidelity CFD modeling across various operating regimes.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="project-card h-100 d-flex flex-column">
+                        <div class="bg-dark text-white p-5 text-center d-flex align-items-center justify-content-center" style="height: 200px;">
+                            <i class="fas fa-microchip fa-3x opacity-50"></i>
+                        </div>
+                        <div class="p-4">
+                            <h5>Complex Moving-Geometry CFD & SPH</h5>
+                            <p class="small text-muted">Parallel adaptive weakly-compressible SPH for flapping airfoils. Comparison between grid-based and particle-based methods.</p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
 
-    <section id="projects" class="bg-light">
-        <div class="container">
-            <h2 class="section-title">Selected Projects</h2>
-            <div class="row g-4">
-                <div class="col-md-6">
-                    <div class="card project-card p-4 h-100">
-                        <h5>Track-Based VAWT</h5>
-                        <p class="small text-muted">Developed CFD frameworks using sliding and overset mesh techniques to optimize blade trajectories and unsteady flow features.</p>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="card project-card p-4 h-100">
-                        <h5>VAWT Aerodynamics</h5>
-                        <p class="small text-muted">URANS-based simulations of Darrieus-type turbines, focusing on torque generation, wake interaction, and dynamic stall phenomena.</p>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="card project-card p-4 h-100">
-                        <h5>HAWT Simulation</h5>
-                        <p class="small text-muted">Utilizing **OpenFAST** and CFD aerodynamic modeling to study rotor performance across complex operating regimes.</p>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="card project-card p-4 h-100">
-                        <h5>Moving-Geometry SPH</h5>
-                        <p class="small text-muted">Comparative studies between grid-based CFD and adaptive SPH for flapping airfoils and multi-body flow systems.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="publications">
+    <section id="publications" class="py-5">
         <div class="container">
             <h2 class="section-title">Selected Publications</h2>
-            
             <div class="pub-item">
-                <span class="pub-title">Parallel adaptive weakly-compressible SPH for complex moving geometries</span>
-                <span class="pub-author">Amaha, A.H., Muta, A., Ramachandran, P.</span>
-                <span class="pub-journal">Computer Physics Communications, 2022</span>
+                <strong>Parallel adaptive weakly-compressible SPH for complex moving geometries</strong><br>
+                Amaha, A.H., Muta, A., Ramachandran, P. | <em>Computer Physics Communications</em> (2022)
             </div>
-
             <div class="pub-item">
-                <span class="pub-title">Improved non-reflecting outlet boundary condition for WCSPH</span>
-                <span class="pub-author">Negi, P., Ramachandran, P., Amaha, A.H.</span>
-                <span class="pub-journal">Computer Methods in Applied Mechanics and Engineering, 2020</span>
+                <strong>Improved non-reflecting outlet boundary condition for WCSPH</strong><br>
+                Negi, P., Ramachandran, P., Amaha, A.H. | <em>Computer Methods in Applied Mechanics and Engineering</em> (2020)
             </div>
-
             <div class="pub-item">
-                <span class="pub-title">Vertical-axis turbine simulation based on sliding and overset meshes</span>
-                <span class="pub-author">Amaha, A.H., Gopalakrishnan, S., Ramachandran, P.</span>
-                <span class="pub-journal">IOP Conference Series: MSE, 2024</span>
-            </div>
-
-            <div class="mt-4">
-                <a href="https://orcid.org/0000-0001-7877-5883" class="btn btn-sm btn-outline-dark me-2">ORCID</a>
-                <a href="https://tinyurl.com/mrxf7u3e" class="btn btn-sm btn-outline-dark">Google Scholar</a>
+                <strong>Vertical-axis turbine simulation based on sliding and overset meshes</strong><br>
+                Amaha, A.H., Gopalakrishnan, S., Ramachandran, P. | <em>IOP Conference Series: MSE</em> (2024)
             </div>
         </div>
     </section>
 
-    <section id="links" class="text-center">
+    <footer id="links" class="py-5 bg-light text-center">
         <div class="container">
-            <h2 class="section-title d-inline-block">Links & CV</h2>
-            <div class="mt-4 d-flex justify-content-center gap-3 flex-wrap">
-                <a href="CV_Asmelash_Amaha.pdf" class="btn-cv" download>
-                    <i class="fas fa-file-pdf me-2"></i> Download CV (PDF)
-                </a>
-            </div>
-            <div class="mt-5 fs-4">
-                <a href="https://github.com/asmelash" class="text-dark me-4"><i class="fab fa-github"></i></a>
-                <a href="https://linkedin.com/in/asmelash4" class="text-dark me-4"><i class="fab fa-linkedin"></i></a>
+            <h2 class="section-title d-inline-block">Links & CV</h2><br>
+            <a href="CV_Asmelash_Amaha.pdf" class="btn-main d-inline-block mb-4" download><i class="fas fa-file-pdf me-2"></i>Download Full CV</a>
+            <div class="d-flex justify-content-center gap-4 fs-3">
+                <a href="https://orcid.org/0000-0001-7877-5883" target="_blank" class="text-dark"><i class="fab fa-orcid"></i></a>
+                <a href="https://github.com/asmelash" target="_blank" class="text-dark"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/asmelash4" target="_blank" class="text-dark"><i class="fab fa-linkedin"></i></a>
                 <a href="mailto:asmelashx@gmail.com" class="text-dark"><i class="fas fa-envelope"></i></a>
             </div>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container text-center">
-            <p class="mb-0">&copy; 2026 Asmelash Haftu Amaha. Edurest Portfolio.</p>
-            <p class="small opacity-50">Built with Bootstrap 5 | Last Updated: Jan 2026</p>
+            <p class="mt-5 text-muted small">Last updated: January 2026</p>
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
