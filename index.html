@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asmelash Haftu Amaha | Research Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <style>
+        :root { --primary-blue: #002147; --tech-blue: #007FFF; --soft-bg: #f8f9fa; }
+        body { font-family: 'Inter', system-ui, -apple-system, sans-serif; color: #333; line-height: 1.6; background-color: white; }
+        
+        /* Navigation */
+        .navbar { background: rgba(255, 255, 255, 0.95) !important; backdrop-filter: blur(10px); border-bottom: 1px solid #eee; }
+        .nav-link { font-weight: 500; color: var(--primary-blue) !important; margin: 0 10px; }
+        .nav-link:hover { color: var(--tech-blue) !important; }
+
+        /* Hero Section */
+        .hero { background: linear-gradient(135deg, var(--primary-blue) 0%, #004080 100%); color: white; padding: 100px 0 60px; }
+        .hero h1 { font-weight: 800; letter-spacing: -1px; }
+        .badge-tech { background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.3); color: white; padding: 5px 15px; border-radius: 20px; font-size: 0.9rem; }
+
+        /* Content Sections */
+        section { padding: 80px 0; border-bottom: 1px solid #eee; }
+        .section-title { font-weight: 700; color: var(--primary-blue); margin-bottom: 40px; position: relative; }
+        .section-title::after { content: ''; display: block; width: 50px; height: 4px; background: var(--tech-blue); margin-top: 10px; }
+
+        /* Project Cards */
+        .project-card { border: none; border-left: 4px solid var(--tech-blue); background: var(--soft-bg); transition: 0.3s; }
+        .project-card:hover { transform: translateX(10px); background: #eef6ff; }
+
+        /* Video/Image Container */
+        .media-box { border-radius: 12px; overflow: hidden; box-shadow: 0 20px 40px rgba(0,0,0,0.1); transition: 0.3s; }
+        .media-box:hover { transform: scale(1.02); }
+
+        /* Publication List */
+        .pub-item { margin-bottom: 25px; padding-left: 20px; border-left: 2px solid #ddd; }
+        .pub-author { font-weight: 600; color: #555; }
+        .pub-title { font-weight: 700; color: var(--primary-blue); display: block; }
+        .pub-journal { font-style: italic; color: var(--tech-blue); }
+
+        /* Footer */
+        footer { background: var(--soft-bg); padding: 40px 0; font-size: 0.9rem; color: #777; }
+        
+        .btn-cv { background: var(--tech-blue); color: white; font-weight: 600; border-radius: 30px; padding: 12px 30px; transition: 0.3s; text-decoration: none; display: inline-block; }
+        .btn-cv:hover { background: var(--primary-blue); color: white; transform: translateY(-2px); }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><strong>EDU<span style="color:var(--tech-blue)">REST</span></strong></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#research">Research</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
+                    <li class="nav-item"><a class="nav-link" href="teaching.html">Teaching</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#links">CV & Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container text-center animate__animated animate__fadeIn">
+            <h1 class="display-4">Asmelash Haftu Amaha, <span style="font-weight: 300;">PhD</span></h1>
+            <p class="lead opacity-75 mb-4">Computational Fluid Dynamics | Wind Energy | Hybrid Systems</p>
+            <div class="d-flex justify-content-center gap-2 flex-wrap mb-4">
+                <span class="badge-tech">IIT Bombay</span>
+                <span class="badge-tech">OpenFOAM</span>
+                <span class="badge-tech">Parallel SPH</span>
+                <span class="badge-tech">Aerodynamics</span>
+            </div>
+            <a href="mailto:asmelashx@gmail.com" class="text-white text-decoration-none"><i class="fas fa-envelope me-2"></i>asmelashx@gmail.com</a>
+        </div>
+    </header>
+
+    <section id="research">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7">
+                    <h2 class="section-title">Research Focus</h2>
+                    <p class="lead">Bridging high-fidelity CFD simulations with sustainable energy infrastructure.</p>
+                    <p>I specialize in **computational fluid dynamics (CFD)** for aerospace and mechanical systems. My work involves turbulence modeling and moving-geometry simulations (sliding/overset meshes) to analyze unconventional wind turbines. Using **OpenFOAM** and high-performance computing, I bridge the gap between component-level aerodynamics and system-level sustainability.</p>
+                </div>
+                <div class="col-lg-5">
+                    <div class="media-box mt-4 mt-lg-0">
+                        <a href="https://youtu.be/rtQMsZM5km0" target="_blank">
+                            <img src="https://img.youtube.com/vi/rtQMsZM5km0/maxresdefault.jpg" class="img-fluid" alt="CFD Simulation Thumbnail">
+                        </a>
+                        <div class="p-3 bg-light">
+                            <p class="small text-muted mb-0"><i class="fas fa-play-circle me-2"></i> URANS-based CFD simulation: Wake development of a 3-blade VAWT.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="bg-light">
+        <div class="container">
+            <h2 class="section-title">Selected Projects</h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card project-card p-4 h-100">
+                        <h5>Track-Based VAWT</h5>
+                        <p class="small text-muted">Developed CFD frameworks using sliding and overset mesh techniques to optimize blade trajectories and unsteady flow features.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card project-card p-4 h-100">
+                        <h5>VAWT Aerodynamics</h5>
+                        <p class="small text-muted">URANS-based simulations of Darrieus-type turbines, focusing on torque generation, wake interaction, and dynamic stall phenomena.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card project-card p-4 h-100">
+                        <h5>HAWT Simulation</h5>
+                        <p class="small text-muted">Utilizing **OpenFAST** and CFD aerodynamic modeling to study rotor performance across complex operating regimes.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card project-card p-4 h-100">
+                        <h5>Moving-Geometry SPH</h5>
+                        <p class="small text-muted">Comparative studies between grid-based CFD and adaptive SPH for flapping airfoils and multi-body flow systems.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="publications">
+        <div class="container">
+            <h2 class="section-title">Selected Publications</h2>
+            
+            <div class="pub-item">
+                <span class="pub-title">Parallel adaptive weakly-compressible SPH for complex moving geometries</span>
+                <span class="pub-author">Amaha, A.H., Muta, A., Ramachandran, P.</span>
+                <span class="pub-journal">Computer Physics Communications, 2022</span>
+            </div>
+
+            <div class="pub-item">
+                <span class="pub-title">Improved non-reflecting outlet boundary condition for WCSPH</span>
+                <span class="pub-author">Negi, P., Ramachandran, P., Amaha, A.H.</span>
+                <span class="pub-journal">Computer Methods in Applied Mechanics and Engineering, 2020</span>
+            </div>
+
+            <div class="pub-item">
+                <span class="pub-title">Vertical-axis turbine simulation based on sliding and overset meshes</span>
+                <span class="pub-author">Amaha, A.H., Gopalakrishnan, S., Ramachandran, P.</span>
+                <span class="pub-journal">IOP Conference Series: MSE, 2024</span>
+            </div>
+
+            <div class="mt-4">
+                <a href="https://orcid.org/0000-0001-7877-5883" class="btn btn-sm btn-outline-dark me-2">ORCID</a>
+                <a href="https://tinyurl.com/mrxf7u3e" class="btn btn-sm btn-outline-dark">Google Scholar</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="links" class="text-center">
+        <div class="container">
+            <h2 class="section-title d-inline-block">Links & CV</h2>
+            <div class="mt-4 d-flex justify-content-center gap-3 flex-wrap">
+                <a href="CV_Asmelash_Amaha.pdf" class="btn-cv" download>
+                    <i class="fas fa-file-pdf me-2"></i> Download CV (PDF)
+                </a>
+            </div>
+            <div class="mt-5 fs-4">
+                <a href="https://github.com/asmelash" class="text-dark me-4"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/asmelash4" class="text-dark me-4"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:asmelashx@gmail.com" class="text-dark"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2026 Asmelash Haftu Amaha. Edurest Portfolio.</p>
+            <p class="small opacity-50">Built with Bootstrap 5 | Last Updated: Jan 2026</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
